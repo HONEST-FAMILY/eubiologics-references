@@ -369,3 +369,28 @@ footer {
 .group.subgrp .gnum { font-size: clamp(34px, 5vw, 56px); }
 .glink { display: inline-block; margin-top: 10px; font-size: 14px; color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(255,159,49,.45); }
 .links { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start; }
+
+.facts { list-style: none; margin: -6px 0 14px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.facts li {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #2f3a33;
+  background: #111814;
+  color: #cfe8d6;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.checklist {
+  margin: 0 0 26px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #0e0e10;
+}
+.checklist h3 { margin: 0; font-size: 19px; letter-spacing: -0.02em; }
+.cknote { margin: 6px 0 0; color: var(--mute); font-size: 15px; max-width: 760px; }
+.checklist .devices { margin-top: 16px; }
+@media (min-width: 900px) { .checklist .devices { grid-template-columns: repeat(2, 1fr); } }
+.checklist .devices li { padding: 16px 18px; }
+.checklist .devices b { font-size: 16px; }
+@media (min-width: 900px) { .combos:has(> .combo:nth-child(4)) { grid-template-columns: repeat(2, 1fr); } }
